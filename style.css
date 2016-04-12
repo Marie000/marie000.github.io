@@ -40,10 +40,15 @@ button:hover, button:active, button:focus {
 	border-radius:20px;
 	opacity:0.9;
 }
-h1,h2 {
+h1,h2,h3 {
 	font-family: 'Special Elite';
+	font-weight: bold;
+}
+h2 {
+	font-size:7vmin;
 }
 .highlight {
 	font-family: 'Special Elite';
 	font-weight:bold;
 }
+/*work*/
