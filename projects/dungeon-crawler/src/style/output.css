@@ -1,0 +1,77 @@
+body {
+  color: white;
+  font-family: "VT323";
+  padding: 10px; }
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 0; }
+
+h2 {
+  text-align: center;
+  padding: 5px;
+  margin: 0; }
+
+.header {
+  padding: 20px; }
+
+.display {
+  padding: 10px;
+  width: 500px;
+  background: black;
+  text-align: center; }
+
+.grid {
+  display: block;
+  text-align: center; }
+
+.squareRow {
+  padding: 0;
+  margin: 0; }
+
+.square {
+  padding: 0;
+  margin: -2px 0; }
+
+.health {
+  padding: 10px; }
+
+.level {
+  display: block;
+  float: right; }
+
+.button {
+  text-align: center; }
+
+.newButton {
+  display: block;
+  text-align: center; }
+
+.characterChoice {
+  border: white dashed 2px;
+  margin: 10px 80px;
+  padding: 10px; }
+
+button {
+  font-family: "VT323";
+  font-size: 15px;
+  background: black;
+  border: white solid 2px;
+  color: white;
+  padding: 5px; }
+
+button:hover {
+  background: white;
+  color: black; }
+
+.endImage {
+  width: 50px;
+  height: 50px;
+  padding: 10px 0 40px 0; }
+
+.enemyHealth {
+  text-align: left;
+  float: right; }
+
+/*# sourceMappingURL=output.css.map */

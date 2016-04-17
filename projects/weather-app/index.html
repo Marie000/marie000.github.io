@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<header>
+<title>Weather App</title>
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<link href="style.css" rel='stylesheet'>
+</header>
+
+
+<div class="weather"></div>
+<br><br>
+<div id="title"><h1>Your Local Weather</h1>
+  <h2><div id="location"></div></h2>
+</div>
+
+
+
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#current">Current Weather</a></li>
+<li><a data-toggle="tab" href="#forecast">Forecast</a></li>
+</ul>
+
+<div id="box">
+	<div class="tab-content">
+		<div class="tab-pane fade in active" id="current">
+			<div id="temperature"></div>
+			<div id="humidity"></div>
+			<div id="main"></div>
+  		</div>
+		<div class="tab-pane fade" id="forecast">
+			<h2 id="forecast-title">Forecast</h2>
+
+			<div class="row">
+				<div class="col col-lg-3 col-md-6 col-xs-12">
+					<div class="day">
+			<div id="day1Date"></div>
+			<div>Max: <span id="day1Max"></span></div>
+			<div>Min: <span id="day1Min"></span></div>
+			<div id="day1Weather"></div>
+					<br>
+				</div>
+		</div>
+				<div class="col col-lg-3 col-md-6 col-xs-12">
+			<div class="day">
+			<div id="day2Date"></div>
+			<div>Max: <span id="day2Max"></span></div>
+			<div>Min: <span id="day2Min"></span></div>
+			<div id="day2Weather"></div>
+		<br>
+		</div>
+		</div>
+				<div class="col col-lg-3 col-md-6 col-xs-12">
+					<div class="day">
+			<div id="day3Date"></div>
+			<div>Max: <span id="day3Max"></span></div>
+			<div>Min: <span id="day3Min"></span></div>
+			<div id="day3Weather"></div>
+						<br>
+		</div>
+		</div>
+
+				<div class="col col-lg-3 col-md-6 col-xs-12">
+					<div class="day">
+			<div id="day4Date"></div>
+			<div>Max: <span id="day4Max"></span></div>
+			<div>Min: <span id="day4Min"></span></div>
+			<div id="day4Weather"></div>
+			<br>
+		</div>
+		</div>		
+		</div>
+	</div>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  <script src="main.js"></script>

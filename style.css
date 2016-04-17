@@ -1,29 +1,29 @@
 /*Main Styles*/
 body {
-	color:#f7882f;
-	background-color:#dcc7aa;
-	background-image:url('images/cloud.png');
+	color:#4c3327;
+	background-color:#e6e0cb;
+	background-image:url('images/cloud2.png');
 	font-family:'Coming Soon', cursive;
 }
 
 /*Header*/
 #header {
-	background-color:#6b7a8f;
-	color:#dcc7aa;
+	background-color:#4c3327;
+	color:#ecc279;
 	font-size:5vmin;
 	text-align:right;
 }
 button{
-	background-color:#6b7a8f;
-	color:#dcc7aa;
+	background-color:#4c3327;
+	color:#ecc279;
 	font-family: 'Special Elite';
 	border:none;
 	display:inline-block;
 	padding:10px 25px;
 }
 button:hover, button:active, button:focus {
-	background-color:#6b7a8f;
-	color:#f7c331;
+	background-color:#4c3327;
+	color:#cb8c1d;
 }
 #homeLink {
 	float:left;
@@ -31,11 +31,11 @@ button:hover, button:active, button:focus {
 
 
 
-/*Jumbotron*/
-.jumbotron {
+/*pages*/
+.page {
 	margin:50px;
 	padding:50px;
-	background-color:#f7882f;
+	background-color:#cb8c1d;
 	color:black;
 	border-radius:20px;
 	opacity:0.9;

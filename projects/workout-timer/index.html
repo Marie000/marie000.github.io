@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./style.css">
+
+<script type="text/javascript" src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+
+<title>Workout Timer</title>
+</head>
+
+<body>
+<div class="settings">
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" id="workout">
+  	<div class="panel-heading">
+  		<h2>Workout Settings <a onclick="changeIcon()" data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span id="icon" class="glyphicon glyphicon-chevron-up" aria-hidden="true" style='float:right'></span>
+    	</a></h2>
+    </div>
+
+    <div id="collapse1" class="panel-collapse collapse in" data-toggle="button">
+      <div class="panel-body">
+
+<!--Total Time -->
+      	<h3>Choose your workout goal</h3>
+      	<div class="radio" id="setGoal">
+  		<div class="row" >
+
+    		<div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" class="radioButton" name="setGoal" checked="true" onclick="Workout.setGoal(10)">10 minutes</label>
+    		</div>
+        	<div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" name="setGoal" onclick="Workout.setGoal(15)">15 minutes</label>
+    		</div>
+        	<div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" name="setGoal" onclick="Workout.setGoal(20)">20 minutes</label>
+    		</div>
+  
+    	<div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" name="setGoal" onclick="Workout.setGoal(25)">25 minutes</label>
+    	</div>
+        <div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" name="setGoal" onclick="Workout.setGoal(30)">30 minutes</label>
+    	</div>
+        <div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" name="setGoal" onclick="Workout.setGoal(40)">40 minutes</label>
+    	</div>
+  	</div>
+</div>
+
+ <!--Workout Type -->
+  			<h3>
+    		Choose your workout type</h3>
+    		<div class="radio" id="setType">
+    		<div class="row">
+    			<div class="col-xs-6 col-sm-4">
+  					<label><input type="radio" name="setWorkout" onclick="Workout.setType('long distance')">long distance</label>  
+            <span class="glyphicon glyphicon-info-sign infoIcon" id="distanceIcon">
+            <span id="distanceInfo" class="infoText">Constant medium-level difficulty, preceded and followed by a warmup and cooldown
+            </span>  				
+			    </div>
+        			<div class="col-xs-6 col-sm-4">
+                		<label><input type="radio" name="setWorkout" onclick="Workout.setType('uphill')">uphill</label>   
+            <span class="glyphicon glyphicon-info-sign infoIcon" id="uphillIcon">
+            <span id="uphillInfo" class="infoText">Constant increase in difficulty, followed by a cooldown.
+            </span>                      
+    				</div>
+        			<div class="col-xs-6 col-sm-4">
+               			<label><input type="radio" name="setWorkout" onclick="Workout.setType('climb')">climb</label>   
+            <span class="glyphicon glyphicon-info-sign infoIcon" id="climbIcon">
+            <span id="climbInfo" class="infoText">Gradual increase in difficulty followed by a gradual decrease. 
+            </span>  
+    				</div>
+    			<div class="col-xs-6 col-sm-4">
+            		<label><input type="radio" name="setWorkout" onclick="Workout.setType('intervals')">intervals</label>   
+            <span class="glyphicon glyphicon-info-sign infoIcon" id="intervalsIcon">
+            <span id="intervalsInfo" class="infoText">Alternating between low and high levels of difficulty. 
+            </span>  
+    			</div>
+        		<div class="col-xs-6 col-sm-4">
+                	<label><input type="radio" name="setWorkout" onclick="Workout.setType('random')">random</label>   
+            <span class="glyphicon glyphicon-info-sign infoIcon" id="randomIcon">
+            <span id="randomInfo" class="infoText">Randomly chosen levels of difficulty. 
+            </span>  
+			    </div>
+        		<div class="col-xs-6 col-sm-4">
+    			</div>
+  			</div></div>
+
+<!--Difficulty-->
+  			<h3>Choose your difficulty</h3>
+  			<div class="radio" id="setDifficulty">
+  			<div class="row">
+				<div class="col-xs-6 col-sm-4">
+					 <label><input type="radio" name="setDifficulty" onclick="Workout.setDifficulty('easy')">easy</label>   
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					 <label><input type="radio" name="setDifficulty" checked="true" onclick="Workout.setDifficulty('medium')">medium</label>  
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					 <label><input type="radio" name="setDifficulty" onclick="Workout.setDifficulty('hard')">hard</label>  
+				</div>				
+  			</div></div>
+    </div><!--panel-body-->
+</div><!--panel-collapse-->
+</div><!--panel-->
+</div><!--panel-group-->
+</div><!--settings-->
+<div class="main">
+
+<!--modal-->
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Keep track of your progress</h4>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <p>Date:<span id="date"></span></p>
+        <p>Your total time:<span id="resultTime"></span></p>
+        <p>Your difficulty level:<span id="resultDifficulty"></span></p>
+        <p>Your workout type:<span id="resultType"></span></p>
+        <p>Number of calories burned: <span id="caloriesSection"><input type="text" name="resultCalories" id="caloriesInput" />
+        <button class="btn btn-default" onClick="UserData.submitCalories()">Submit</button></span>
+        </p>
+        <p>Distance: <span id="distanceSection"><input type="text" name="resultDistance" id="distanceInput"/>
+        <button class="btn btn-default" onClick="UserData.submitDistance()">Submit</button></span>
+        </p>
+        <button class="btn btn-default" onclick="UserData.submitToDatabase()">Save data</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--end of Modal-->
+
+<!--Message-->
+<div id="message">Start your workout at level 3
+
+</div>
+
+<!--Modal Button -->
+<div id="modalButtonSection">
+<button type="button" id="modalButton" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Save your workout results</button>
+</div>
+
+<!--timer-->
+<div id="timerSection">
+	<span id="timer"></span>
+	  	<button onclick="Timer.reverseTimer()" id="reverseTimer" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+<div>
+	<button onclick="Timer.startTimer()" id="startButton" class="btn btn-lg btn-default">start</button>
+	<button onclick="Timer.pauseTimer()" id="pauseButton" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-pause"></span></button>
+</div>
+	<button onclick="Timer.resetTimer()" id="resetButton" class="btn btn-default">Reset Timer</button>
+
+</div>
+
+<h3>Your Goal:</h3><span id="goal"></span>
+<h3>Your chosen workout:</h3>
+
+<div id="type"></div>
+
+
+</div><!---main-->
+
+
+     <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="./timer.js"></script>
+    <script src="./workout.js"></script>
+    <script src="./userData.js"></script>
+    <script src="./alarm.js"></script>
+    
+
+	</body>

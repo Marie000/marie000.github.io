@@ -1,0 +1,14 @@
+
+{"city":{"id":6077243,"name":"Montreal","coord":{"lon":-73.587807,"lat":45.508839},"country":"CA","population":0},
+"cod":"200","message":0.0088,"cnt":7,
+"list":[
+{"dt":1460131200,
+"temp":{"day":273.98,"min":269.26,"max":275.22,"night":269.26,"eve":274.22,"morn":273.39},
+"pressure":968.47,"humidity":78,
+"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"speed":3.21,"deg":226,"clouds":44,"snow":1.92},
+{"dt":1460217600,"temp":{"day":268.25,"min":263.87,"max":270.42,"night":263.87,"eve":270.42,"morn":266.03},"pressure":985.38,"humidity":45,"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"speed":2.87,"deg":340,"clouds":48,"snow":0.02},{"dt":1460304000,"temp":{"day":267.18,"min":259.88,"max":272.86,"night":265.17,"eve":272.86,"morn":259.88},"pressure":997.66,"humidity":45,"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"speed":1.56,"deg":312,"clouds":0},{"dt":1460390400,"temp":{"day":271.82,"min":266.67,"max":281.1,"night":279.02,"eve":279.6,"morn":266.67},"pressure":983.78,"humidity":88,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"speed":3.46,"deg":132,"clouds":92,"rain":6.96,"snow":12.55},{"dt":1460476800,"temp":{"day":283.22,"min":275.56,"max":283.22,"night":275.56,"eve":281.39,"morn":281.17},"pressure":986.19,"humidity":0,"weather":[{"id":600,"main":"Snow","description":"light snow","icon":"13d"}],"speed":4.2,"deg":184,"clouds":98,"rain":33.06,"snow":0.59},{"dt":1460563200,"temp":{"day":277.11,"min":268.04,"max":277.11,"night":268.04,"eve":273.48,"morn":272.44},"pressure":1005.18,"humidity":0,"weather":[{"id":600,"main":"Snow","description":"light snow","icon":"13d"}],"speed":3.24,"deg":317,"clouds":14,"rain":1,"snow":1.11},{"dt":1460649600,"temp":{"day":277.89,"min":267.72,"max":277.89,"night":267.72,"eve":274.74,"morn":270.32},"pressure":1010.51,"humidity":0,"weather":[{"id":600,"main":"Snow","description":"light snow","icon":"13d"}],"speed":1.7,"deg":2,"clouds":11,"snow":0.17}]}
+
+
+Your Local Weather
+Montreal
+10
