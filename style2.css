@@ -1,29 +1,29 @@
 /*Main Styles*/
 body {
-	color:#4c3327;
-	background-color:#e6e0cb;
+	color:#535353;
+	background-color:#888888;
 	background-image:url('');
 	font-family:'Coming Soon', cursive;
 }
 
 /*Header*/
 #header {
-	background-color:#4c3327;
-	color:#ecc279;
+	background-color:#1a0315;
+	color:#f8eee7;
 	font-size:5vmin;
 	text-align:right;
 }
 button{
-	background-color:#4c3327;
-	color:#ecc279;
+	background-color:#1a0315;
+	color:#535353;
 	font-family: 'Special Elite';
 	border:none;
 	display:inline-block;
 	padding:10px 25px;
 }
 button:hover, button:active, button:focus {
-	background-color:#4c3327;
-	color:#cb8c1d;
+	background-color:#1a0315;
+	color:#88d317;
 }
 #homeLink {
 	float:left;
@@ -35,7 +35,7 @@ button:hover, button:active, button:focus {
 .page {
 	margin:50px;
 	padding:50px;
-	background-color:#cb8c1d;
+	background-color:#6e3667;
 	color:black;
 	border-radius:20px;
 	opacity:0.9;

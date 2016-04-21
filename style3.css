@@ -1,0 +1,86 @@
+/*Main Styles*/
+body {
+	color:white;
+	background-color:#131515;
+	background-image:url('');
+font-family: 'Patrick Hand', cursive;
+}
+a {
+	color:#131515;
+	font-family:'Special Elite';
+	background-color:#339989;
+	padding:10px;
+	border-radius:5px;
+}
+a:hover, a:active {
+	color:#7de2d1;
+	text-decoration:none;
+}
+
+/*Header*/
+#header {
+	background-color:#2b2c28;
+	color:#339989;
+	font-size:5vmin;
+	text-align:right;
+}
+button{
+	background-color:#2b2c28;
+	color:#339989;
+	font-family: 'Special Elite';
+	border:none;
+	display:inline-block;
+	padding:10px 25px;
+}
+button:hover, button:active, button:focus {
+	background-color:#2b2c28;
+	color:#7de2d1;
+}
+#homeLink {
+	float:left;
+}
+
+
+
+/*pages*/
+.page {
+	margin:50px;
+	padding:50px;
+	background-color:#2b2c28;
+	color:white;
+	border-radius:20px;
+	opacity:0.9;
+	font-size:4vmin;
+}
+.page-header{
+	color:#339989;
+}
+h1,h2,h3 {
+	font-family: 'Special Elite';
+	font-weight: bold;
+}
+h2 {
+	font-size:7vmin;
+}
+h3 {
+	color:#7de2de;
+}
+.highlight {
+	font-family: 'Special Elite';
+	font-weight:bold;
+	color:#7de2de;
+}
+/*work*/
+.project {
+	border:white 2px dashed;
+	border-radius:5px;
+	margin: 25px 15px;
+	padding: 15px;
+}
+.code, .live {
+	margin:10px;
+}
+.code{
+	float:right;
+}
+
