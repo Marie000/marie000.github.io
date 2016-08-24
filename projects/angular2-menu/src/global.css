@@ -1,0 +1,30 @@
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+h1, h2 {
+    font-family: 'Unica One', sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+.header-section {
+    text-align: center;
+}
+form {
+    margin: 0 30%;
+}
+input, textarea {
+    width: 100%;
+}
+.form-item{
+    padding: 5px 0;
+}
+.test {
+    margin: 0 30%;
+    background-color:lightblue;
+}
