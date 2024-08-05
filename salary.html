@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio - Marie Pelletier</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Salary</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Salary Predictor</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/salary.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">LinkedIn Salary Predictor</h3>
+
+                    <p>This is a test project to see if I could built a Machine Learning model to predict salary offered
+                        based on a posted job description. </p>
+                    <p>This is a work in progress and is not meant to be used as an accurate predictor of salary. It is
+                        limited by the <a href="https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data">data
+                            that was used</a>, which is US-based, from 2023. It also does not
+                        take into account regions or fluctuations in the market over time. The dataset included over
+                        33,000 job postings, but only 13,000 had salary information.</p>
+                    <p>
+                        For all you statistic nerds, the r-squared score of the model was around 0.6. For the rest of
+                        you,
+                        that level of accuracy can probably be described as "better than nothing". It might have been
+                        better
+                        if I had more data to work with. Or maybe there is just so much we can infer from a description
+                        alone.
+                    </p>
+                    <p>
+                        For this first test, only the description of the job is taken into account. Adding other
+                        information, including the date of the posting and the location, could improve the prediction.
+                    </p>
+                    <div class="row mb-3">
+
+                    </div>
+                    <a href="https://huggingface.co/spaces/marie000/salary-predictor"
+                        class="btn btn-outline-primary mr-4">Live Version</a>
+                    <a href="https://github.com/Marie000/Salary_Predictor_Project"
+                        class="btn btn-outline-primary mr-4">Code</a>
+                    <a href="https://github.com/Marie000/Linkedin-predictor-model/blob/main/Copy_of_LinkedIn_Salary_Predictor.ipynb"
+                        class="btn btn-outline-primary mr-4">Original Notebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">Skills Used</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Pandas</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Pytorch</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MLOps</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Skill End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/Marie000"><i
+                        class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/marie-pelletier-14837441/"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="m-0">Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML
+                    Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
