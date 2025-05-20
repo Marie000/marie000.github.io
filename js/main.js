@@ -112,6 +112,27 @@
         loop: true,
         items: 1
     });
-    
+
+
+    // Initialize Gradio chat interface
+    function initGradio() {
+        if (typeof gradio !== 'undefined') {
+            $('#marieBotModal').on('show.bs.modal', function (e) {
+                if (!window.gradioLoaded) {
+                    gradio.load("https://marie000-mariebot.hf.space", "gradio-chat");
+                    window.gradioLoaded = true;
+                }
+            });
+        } else {
+            // If gradio isn't loaded yet, wait a bit and try again
+            setTimeout(initGradio, 100);
+        }
+    }
+
+    // Start the Gradio initialization process
+    $(document).ready(function() {
+        initGradio();
+    });
+
 })(jQuery);
 

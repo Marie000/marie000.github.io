@@ -66,6 +66,31 @@
     </div>
     <!-- Header End -->
 
+    <!-- Chat Button Start -->
+    <div class="container text-center my-5">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#marieBotModal">
+            <img src="img/mariebot_avatar.png" height="50" width="50" alt="MarieBot Avatar" class="mariebot-avatar mr-2">
+            Chat with MarieBot
+        </button>
+    </div>
+
+    <!-- MarieBot Modal -->
+    <div class="modal fade" id="marieBotModal" tabindex="-1" role="dialog" aria-labelledby="marieBotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="marieBotModalLabel">Chat with MarieBot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <gradio-app src="https://marie000-mariebot.hf.space"></gradio-app>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
@@ -471,6 +496,12 @@
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+
+    <!-- Gradio Script -->
+    <script
+	    type="module"
+	    src="https://gradio.s3-us-west-2.amazonaws.com/5.29.1/gradio.js"
+    ></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
